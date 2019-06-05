@@ -11,6 +11,7 @@ class Product(
         @Column(name = "product_id", unique = true, nullable = false)
         var product_id: Integer,
         var name: String,
+        @Column(length = 500)
         var description: String,
         var price: Double,
         var discounted_price: Double,
